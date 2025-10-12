@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Lab4question2.html </title>
+<link href="css/crow.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <h1>What does the American Crow eat? </h1>
+  <h3>Click on one of the following choices</h3>
+  <h2 onclick="wrongAnswer1()" class="choices"> Nuts</h2>
+  <h2 onclick="wrongAnswer2()" class="choices"> Berries</h2>
+  <h2 onclick="wrongAnswer3()" class="choices"> Insects</h2>
+  <h2 onclick="rightAnswer()" class="choices"> All the above </h2>
+  <div id="feedback"></div>
+  <img id="Crow_eating" alt="A crow eating" src="img/crow_eating.jpg"/> </div>
+	<script>
+      	function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! They are both Omnivores and scavangers!</h2>");
+         $("#crow_eating").show();
+      }
+		function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Yes, but that is not the only thing they eat! </h2>");
+          $("# crow_eating ").hide();
+        }
+		function wrongAnswer2(){
+          $("#feedback").html("<h2 style='color:red'> Yes, but that is not the only thing they eat! </h2>");
+          $("# crow_eating ").hide();
+        }
+		function wrongAnswer3(){
+          $("#feedback").html("<h2 style='color:red'> Yes, but that is not the only thing they eat! </h2>");
+          $("# crow_eating ").hide();
+        }
+   </script>
+</body>
+</html>
